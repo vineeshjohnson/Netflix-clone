@@ -7,9 +7,9 @@ class EveryOneWatchingWidget extends StatelessWidget {
   final DownloadModel movie;
 
   const EveryOneWatchingWidget({
-    Key? key,
+    super.key,
     required this.movie,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +36,7 @@ class EveryOneWatchingWidget extends StatelessWidget {
             movie.title,
             style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Text(
             movie.overview,
             style: const TextStyle(fontSize: 17, color: grey),

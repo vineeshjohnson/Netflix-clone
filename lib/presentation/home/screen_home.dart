@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:netflix/core/colors.dart';
 import 'package:netflix/core/constants.dart';
-import 'package:netflix/domain/downloads/api.dart'; // Ensure the path is correct
+import 'package:netflix/domain/downloads/api.dart';
 import 'package:netflix/domain/downloads/models/model.dart';
 import 'package:netflix/presentation/common%20widgets/home_main_widget.dart';
 import 'package:netflix/presentation/home/Widgets/home_custom_widget.dart';
@@ -14,6 +14,7 @@ class ScreenHome extends StatefulWidget {
   const ScreenHome({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _ScreenHomeState createState() => _ScreenHomeState();
 }
 

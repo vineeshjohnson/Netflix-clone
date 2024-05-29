@@ -6,7 +6,7 @@ import 'package:netflix/presentation/new%20&%20hot/widgets/coming_soon_widget.da
 import 'package:netflix/presentation/new%20&%20hot/widgets/everyone_watching_widget.dart'; // Adjust import based on your project structure
 
 class ScreenNewAndHot extends StatelessWidget {
-  const ScreenNewAndHot({Key? key}) : super(key: key);
+  const ScreenNewAndHot({super.key});
 
   @override
   Widget build(BuildContext context) {
