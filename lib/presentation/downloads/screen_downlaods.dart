@@ -135,7 +135,7 @@ class _ScreenDownloadsState extends State<ScreenDownloads> {
                           'See what you can Download',
                           style: TextStyle(
                               color: black,
-                              fontSize: 20,
+                              fontSize: 18,
                               fontWeight: FontWeight.bold),
                         ),
                       ),

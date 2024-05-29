@@ -8,7 +8,7 @@ import 'package:netflix/presentation/common%20widgets/home_main_widget.dart';
 import 'package:netflix/presentation/home/Widgets/home_custom_widget.dart';
 import 'package:netflix/presentation/home/Widgets/text_button_widget.dart';
 
-ValueNotifier<bool> scrollNotifier = ValueNotifier(false);
+ValueNotifier<bool> scrollNotifier = ValueNotifier(true);
 
 class ScreenHome extends StatefulWidget {
   const ScreenHome({super.key});
