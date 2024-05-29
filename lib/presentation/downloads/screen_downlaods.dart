@@ -90,16 +90,14 @@ class _ScreenDownloadsState extends State<ScreenDownloads> {
                               angle: -20,
                               width: .4,
                               height: .6,
-                              image:
-                                  'https://image.tmdb.org/t/p/w500${movies[1].posterPath}',
+                              image: '$imageUrl${movies[1].posterPath}',
                             ),
                           if (movies.length > 1)
                             DownloadsPosterWidget(
                               margin: const EdgeInsets.only(bottom: 1),
                               width: .5,
                               height: .6,
-                              image:
-                                  'https://image.tmdb.org/t/p/w500${movies[2].posterPath}',
+                              image: '$imageUrl${movies[2].posterPath}',
                             ),
                         ],
                       ),

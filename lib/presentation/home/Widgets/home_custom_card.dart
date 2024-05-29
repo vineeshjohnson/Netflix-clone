@@ -2,11 +2,13 @@ import 'package:bordered_text/bordered_text.dart';
 import 'package:flutter/material.dart';
 import 'package:netflix/core/colors.dart';
 import 'package:netflix/core/constants.dart';
-import 'package:netflix/core/temp.dart';
+import 'package:netflix/domain/downloads/models/model.dart';
 
 class MainCustomCardHome extends StatelessWidget {
-  const MainCustomCardHome({super.key, required this.index});
+  const MainCustomCardHome(
+      {super.key, required this.index, required this.movie});
   final int index;
+  final DownloadModel movie;
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -24,7 +26,8 @@ class MainCustomCardHome extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
                 image: DecorationImage(
                   fit: BoxFit.cover,
-                  image: NetworkImage(moviePosters[1]),
+                  image: NetworkImage(
+                      'https://image.tmdb.org/t/p/w500${movie.posterPath}'),
                 ),
               ),
             ),

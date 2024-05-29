@@ -77,8 +77,10 @@ class _ScreenHomeState extends State<ScreenHome> {
                                 HomeMainCard(
                                     title: 'Trending Now',
                                     movies: trendingMovies),
-                                const HomeCustomCard(
-                                    title: 'Top 10 TV Shows In India Today'),
+                                HomeCustomCard(
+                                  title: 'Top 10 TV Shows In India Today',
+                                  movies: trendingMovies,
+                                ),
                                 HomeMainCard(
                                     title: "Tense Dramas",
                                     movies: trendingMovies),
